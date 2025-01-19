@@ -13,7 +13,6 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import "../index.css";
 
 const Contacts: React.FC = () => {
@@ -59,16 +58,6 @@ const Contacts: React.FC = () => {
     },
   ];
 
-   const mapContainerStyle = {
-    width: "100%",
-    height: "300px",
-  };
-
-  const lagosCenter = {
-    lat: 6.5244,
-    lng: 3.3792,
-  };
-
   return (
     <div className="general">
       <div className="hero">
@@ -106,7 +95,7 @@ const Contacts: React.FC = () => {
         </nav>
       </div>
 
-      <div className="px-2 lg:px-16 flex justify-evenly items-start flex-col lg:flex-row">
+      <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
         <div className="contact-left">
           <div className="grid gap-6 py-8 border-b border-b-cyan-300">
             <div className="avatar w-32 h-32">
@@ -149,18 +138,12 @@ const Contacts: React.FC = () => {
           </div>
         </div>
         <div className="space-y-8 font-medium">
-          <h2 className="text-white text-xl lg:text-2xl">
+          <h2 className="text-white text-xl lg:text-3xl">
             <span className="text-cyan-300">Contact</span> Form
           </h2>
           <div className="map-container py-8">
             <h3 className="text-white text-lg font-medium">Our Location</h3>
-            <LoadScript googleMapsApiKey="AIzaSyCpUF_rRa489yT5pxPmMKeHIwj-_on9Zgo">
-              <GoogleMap
-                mapContainerStyle={mapContainerStyle}
-                center={lagosCenter}
-                zoom={12}
-              />
-            </LoadScript>
+            <img src="../src/assets/lagos.jpg" className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000" alt="" />
           </div>
 
           <form className="grid grid-cols-1 lg:grid-cols-2 gap-10">
