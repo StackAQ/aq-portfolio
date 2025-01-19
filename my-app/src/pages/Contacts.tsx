@@ -99,7 +99,7 @@ const Contacts: React.FC = () => {
         <div className="contact-left">
           <div className="grid gap-6 py-8 border-b border-b-cyan-300">
             <div className="avatar w-32 h-32">
-              <img src="../src/assets/avatar.png" alt="" className="" />
+              <img src="../public/avatar.png" alt="" className="" />
             </div>
             <span className="text-sm md:text-base lg:text-lg text-center text-cyan-300 uppercase font-medium">
               Abdullateef Abdulqudus
