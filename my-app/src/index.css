@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer components {
   .general {
     @apply relative w-full bg-[url('../src/sky-stars.svg')] bg-no-repeat bg-cover space-y-16 lg:space-y-32;
@@ -123,10 +122,10 @@
   }
 
   .contact-left {
-    @apply grid place-content-center rounded-xl bg-[rgba(0,0,0,0.3)] ring-1 ring-cyan-300 p-2 md:p-6 w-full
+    @apply grid place-content-center rounded-xl bg-[rgba(0,0,0,0.3)] ring-1 ring-cyan-300 p-2 md:p-6 w-full lg:w-1/3
   }
 
   footer {
-    @apply bg-[rgba(0,0,0,0.2)] py-4 px-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center text-white font-medium gap-4;
+    @apply bg-[rgba(0,0,0,0.2)] py-4 px-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center text-white font-medium;
   }
 }
