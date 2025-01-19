@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .general {
+    @apply relative w-full bg-[url('../src/sky-stars.svg')] bg-no-repeat bg-cover space-y-16 lg:space-y-32;
+  }
+
+  .hero {
+    @apply relative z-30  w-full space-y-6 lg:space-y-28;
+  }
+
+  .navbar {
+    @apply py-2 lg:py-4 flex items-center justify-between bg-[rgba(0,0,0,0.2)] transition-all px-4 lg:px-16;
+  }
+
+  .logo {
+    @apply text-2xl font-extrabold text-cyan-300;
+  }
+
+  .menu {
+    @apply text-white font-medium items-center gap-8 transition-all duration-300 ease-in-out;
+  }
+
+  .menu.open {
+    @apply flex flex-col gap-4 absolute top-full left-0 w-full bg-[rgba(0,0,0,0.8)] p-4 lg:static lg:flex-row lg:w-auto lg:p-0;
+  }
+
+  .a-link {
+    @apply relative flex items-center gap-2 p-1;
+  }
+
+  .a-link::before {
+    @apply absolute left-0 bottom-0 w-0 h-[4px] transition-all duration-500 ease-in-out bg-cyan-400;
+    content: "";
+  }
+
+  .a-link:hover::before {
+    @apply w-full;
+  }
+
+  .menu-toggle {
+    @apply text-white text-2xl lg:hidden cursor-pointer;
+  }
+
+  .hero-layout {
+    @apply flex justify-around items-center px-2;
+  }
+
+  .text-layout {
+    @apply font-medium;
+  }
+
+  .anime {
+    @apply whitespace-nowrap animate-typewriter overflow-hidden relative inline-block;
+  }
+
+  .the-flex {
+    @apply flex justify-around flex-col lg:flex-row items-center px-2 lg:px-16 gap-8 lg:gap-16;
+  }
+
+  .intro-layout {
+    @apply font-normal flex justify-center flex-col space-y-8 text-white lg:w-2/3;
+  }
+
+  .key-text {
+    @apply text-cyan-300 italic;
+  }
+
+  .avatar {
+    @apply rounded-full border-white w-44 h-44 overflow-hidden bg-cyan-600 mx-auto;
+  }
+
+  .avatar > img {
+    @apply w-[80%] mx-auto;
+  }
+
+  .connect-layout {
+    @apply flex justify-center items-center flex-col text-center gap-6;
+  }
+
+  .social-media {
+    @apply rounded-full p-2 text-lg bg-white text-cyan-800;
+  }
+
+  .social-media:hover {
+    @apply shadow-md shadow-cyan-300 scale-105;
+  }
+
+  .skill,
+  .tools,
+  .projects {
+    @apply px-4 lg:px-16 grid place-items-center space-y-14 w-full;
+  }
+
+  .expertises {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12;
+  }
+
+  .expertises-div {
+    @apply p-8 shadow-md ring-1 ring-cyan-300 shadow-cyan-300 size-14 lg:size-32 rounded-xl flex justify-center items-center cursor-pointer;
+  }
+
+  .projects-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center gap-x-10 gap-y-20;
+  }
+
+  .project-div {
+    @apply p-4 lg:p-8 rounded-lg shadow-md space-y-8 shadow-cyan-300 transition-transform ring-1 ring-cyan-300;
+  }
+
+  .project-div:hover {
+    @apply scale-105 ease-in-out duration-1000;
+  }
+
+  .expertises-div:hover {
+    @apply animate-pulse;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  .contact-left {
+    @apply grid place-content-center rounded-xl bg-[rgba(0,0,0,0.3)] ring-1 ring-cyan-300 p-2 md:p-6
+  }
+
+  footer {
+    @apply bg-[rgba(0,0,0,0.2)] py-4 px-8 flex flex-col lg:flex-row justify-center lg:justify-between items-center text-white font-medium;
+  }
+}
