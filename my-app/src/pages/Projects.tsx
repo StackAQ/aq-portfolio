@@ -16,56 +16,56 @@ import "../index.css";
 const data = [
   {
     id: 1,
-    imgUrl: "../public/easybanking.jpg",
+    imgUrl: "/public/easybanking.jpg",
     title: "Easybanking Landing Page",
     description:
       "A modern and responsive banking website designed to captivate users with intuitive navigation and aesthetic appeal.",
   },
   {
     id: 2,
-    imgUrl: "../public/product-cart.jpg",
+    imgUrl: "/public/product-cart.jpg",
     title: "Product Cart Platform",
     description:
       "A robust cart management system allowing users to add, remove, and purchase items effortlessly.",
   },
   {
     id: 3,
-    imgUrl: "../public/klothink.png",
+    imgUrl: "/public/klothink.png",
     title: "Klothink E-Commerce Store",
     description:
       "An online fashion store featuring a sleek interface for seamless browsing and purchasing experiences.",
   },
   {
     id: 4,
-    imgUrl: "../public/loopstudio.jpg",
+    imgUrl: "/public/loopstudio.jpg",
     title: "Loopstudio Landing Page",
     description:
       "A dynamic and interactive landing page showcasing a cutting-edge studio's services.",
   },
   {
     id: 6,
-    imgUrl: "../public/price-toggle.jpg",
+    imgUrl: "/public/price-toggle.jpg",
     title: "Price toggle",
     description:
       "A feature-rich pricing interface that enables users to switch between monthly and yearly plans effortlessly.",
   },
   {
     id: 7,
-    imgUrl: "../public/mortgage.jpg",
+    imgUrl: "/public/mortgage.jpg",
     title: "Mortgage Repayment Calculator",
     description:
       "A practical tool that helps users calculate and plan their mortgage repayments efficiently.",
   },
   {
     id: 8,
-    imgUrl: "../public/wnews.jpg",
+    imgUrl: "/public/wnews.jpg",
     title: "W. News",
     description:
       "A news aggregation platform delivering current events with a clean, minimalistic design",
   },
   {
     id: 9,
-    imgUrl: "../public/rating.jpg",
+    imgUrl: "/public/rating.jpg",
     title: "Rating App",
     description:
       "An application that lets users rate products or services, providing valuable feedback for improvement.",

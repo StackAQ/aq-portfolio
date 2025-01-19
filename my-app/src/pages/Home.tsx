@@ -72,7 +72,7 @@ const Home: React.FC = () => {
             </h1>
           </div>
           <div className="w-full lg:w-1/3">
-            <img src="../public/author.svg" alt="" />
+            <img src="/public/author.svg" alt="" />
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="avatar">
-            <img src="../public/avatar.png" alt="" />
+            <img src="/public/avatar.png" alt="" />
           </div>
         </div>
       </div>

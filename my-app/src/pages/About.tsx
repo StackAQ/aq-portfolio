@@ -85,7 +85,7 @@ const About: React.FC = () => {
             Let's connect and create impactful solutions together!
           </p>
         </div>
-        <img src="../public/hero.png" alt="" className="w-full lg:w-1/3 " />
+        <img src="/public/hero.png" alt="" className="w-full lg:w-1/3 " />
       </div>
 
       <div className="skill">
@@ -94,31 +94,31 @@ const About: React.FC = () => {
         </h2>
         <div className="expertises">
           <div className="expertises-div">
-            <img src="../public/html.svg" className="w-full" alt="" />
+            <img src="/public/html.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/css.svg" className="w-full" alt="" />
+            <img src="/public/css.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/javascript.svg" className="w-full" alt="" />
+            <img src="/public/javascript.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/tailwind.svg" className="w-full" alt="" />
+            <img src="/public/tailwind.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/typescript.svg" className="w-full" alt="" />
+            <img src="/public/typescript.svg" className="w-full" alt="" />
           </div>
           {/* the six */}
 
           <div className="col-span-1 hidden lg:grid"></div>
           <div className="expertises-div">
-            <img src="../public/rreact.svg" className="w-full" alt="" />
+            <img src="/public/rreact.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/python.svg" className="w-full" alt="" />
+            <img src="/public/python.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/node-js.svg" className="w-full" alt="" />
+            <img src="/public/node-js.svg" className="w-full" alt="" />
           </div>
           <div className="col-span-1 hidden lg:grid"></div>
         </div>
@@ -130,19 +130,19 @@ const About: React.FC = () => {
         </h2>
         <div className="expertises">
           <div className="expertises-div">
-            <img src="../public/vscode.svg" className="w-full" alt="" />
+            <img src="/public/vscode.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/canva.svg" className="w-full" alt="" />
+            <img src="/public/canva.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/excel.svg" className="w-full" alt="" />
+            <img src="/public/excel.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/jupyter.svg" className="w-full" alt="" />
+            <img src="/public/jupyter.svg" className="w-full" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="../public/vite.svg" className="w-full" alt="" />
+            <img src="/public/vite.svg" className="w-full" alt="" />
           </div>
         </div>
       </div>

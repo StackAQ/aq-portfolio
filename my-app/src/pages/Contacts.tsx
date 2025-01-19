@@ -99,7 +99,7 @@ const Contacts: React.FC = () => {
         <div className="contact-left">
           <div className="grid gap-6 py-8 border-b border-b-cyan-300">
             <div className="avatar w-32 h-32">
-              <img src="../public/avatar.png" alt="" className="" />
+              <img src="/public/avatar.png" alt="" className="" />
             </div>
             <span className="text-sm md:text-base lg:text-lg text-center text-cyan-300 uppercase font-medium">
               Abdullateef Abdulqudus
@@ -143,7 +143,7 @@ const Contacts: React.FC = () => {
           </h2>
           <div className="map-container py-8">
             <h3 className="text-white text-lg font-medium">Our Location</h3>
-            <img src="../src/assets/lagos.jpg" className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000" alt="" />
+            <img src="/src/assets/lagos.jpg" className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000" alt="" />
           </div>
 
           <form className="grid grid-cols-1 lg:grid-cols-2 gap-10">
