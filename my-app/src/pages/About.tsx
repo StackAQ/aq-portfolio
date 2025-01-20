@@ -94,19 +94,19 @@ const About: React.FC = () => {
         </h2>
         <div className="expertises">
           <div className="expertises-div">
-            <img src="html.svg" className="w-full" alt="" />
+            <img src="html.svg" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="css.svg" className="w-full" alt="" />
+            <img src="css.svg" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="javascript.svg" className="w-full" alt="" />
+            <img src="javascript.svg" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="tailwind.svg" className="w-full" alt="" />
+            <img src="tailwind.svg" alt="" />
           </div>
           <div className="expertises-div">
-            <img src="typescript.svg" className="w-full" alt="" />
+            <img src="typescript.svg" alt="" />
           </div>
           {/* the six */}
 

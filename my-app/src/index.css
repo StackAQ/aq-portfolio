@@ -98,7 +98,10 @@
   }
 
   .expertises-div {
-    @apply p-8 shadow-md ring-1 ring-cyan-300 shadow-cyan-300 size-14 lg:size-32 rounded-xl flex justify-center items-center cursor-pointer;
+    @apply p-2 lg:p-8 shadow-md ring-1 ring-cyan-300 shadow-cyan-300 size-14 lg:size-32 rounded-xl flex justify-center items-center cursor-pointer;
+  }
+  .expertises-div img {
+    @apply w-auto h-auto
   }
 
   .projects-layout {
