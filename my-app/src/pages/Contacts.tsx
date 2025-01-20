@@ -151,7 +151,7 @@ const Contacts: React.FC = () => {
               <input
                 type={input.type}
                 placeholder={input.placeholder}
-                className={`grid gap-12 bg-transparent p-3 rounded-xl ring-1 ring-cyan-300 ${
+                className={`grid text-cyan-200 gap-12 bg-transparent p-3 rounded-xl ring-1 ring-cyan-300 ${
                   input.sn && input.sn === 3 ? "col-span-2" : "col-span-1"
                 }`}
               />
