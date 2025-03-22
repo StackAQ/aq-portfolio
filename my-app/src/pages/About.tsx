@@ -67,14 +67,19 @@ const About: React.FC = () => {
             <span className="text-cyan-300">Full-stack developer</span> with a{" "}
             <span className="text-cyan-300">B.Tech</span> in{" "}
             <span className="text-cyan-300">Computer Science</span> from LADOKE
-            AKINTOLA UNIVERSITY OF TECHNOLOGY. I'm currently enhancing my{" "}
-            <span className="text-cyan-300">Full-Stack</span> development skills
-            at Cephas ICT Hub, building a solid foundation in modern web
-            technologies. I also hold a diploma in{" "}
+            AKINTOLA UNIVERSITY OF TECHNOLOGY. I specialize in building modern,
+            scalable web applications with technologies like{" "}
+            <span className="text-cyan-300">
+              React, TypeScript, and Next.js
+            </span>
+            . I also hold a diploma in{" "}
             <span className="text-cyan-300">Office Technology Management</span>{" "}
-            from SQI, which adds an organizational and technological edge to my
-            work.
+            from SQI, which enhances my organizational and technological skills.
+            Passionate about problem-solving and innovation, I am constantly
+            learning and improving my craft in both front-end and back-end
+            development.
           </p>
+
           <p className="lg:text-xl font-normal">
             With a passion for problem-solving, I enjoy creating efficient and
             user-friendly digital solutions. Beyond coding, I'm expanding my
