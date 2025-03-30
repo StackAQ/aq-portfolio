@@ -148,16 +148,25 @@ const Projects: React.FC = () => {
         <span>Copyright &copy; 2025 AQ</span>
 
         <div className="flex justify-center items-center gap-8">
-          <a href="" className="text-white text-base">
+          <a href="github.com/StackAQ" className="text-white text-base">
             <FaGithub />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://x.com/ApexDev026?t=O0UTBLcyHHMAYFycOp8i9g&i9g&s=08"
+            className="text-white text-base"
+          >
             <FaTwitter />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://www.linkedin.com/in/abdullateef-abdulqudus-4a730432b?utm_source=share&utm_campaign=share_via"
+            className="text-white text-base"
+          >
             <FaLinkedin />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://www.instagram.com/qudus.26?igsh=NDJiZmphMXpyanpj"
+            className="text-white text-base"
+          >
             <FaInstagram />
           </a>
         </div>

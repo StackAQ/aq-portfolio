@@ -122,16 +122,28 @@ const Contacts: React.FC = () => {
             ))}
 
             <div className="flex justify-center items-center gap-8">
-              <a href="" className="text-white text-base hover:text-cyan-300">
+              <a
+                href="github.com/StackAQ"
+                className="text-white text-base hover:text-cyan-300"
+              >
                 <FaGithub />
               </a>
-              <a href="" className="text-white text-base hover:text-cyan-300">
+              <a
+                href="https://x.com/ApexDev026?t=O0UTBLcyHHMAYFycOp8i9g&i9g&s=08"
+                className="text-white text-base hover:text-cyan-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="" className="text-white text-base hover:text-cyan-300">
+              <a
+                href="https://www.linkedin.com/in/abdullateef-abdulqudus-4a730432b?utm_source=share&utm_campaign=share_via"
+                className="text-white text-base hover:text-cyan-300"
+              >
                 <FaLinkedin />
               </a>
-              <a href="" className="text-white text-base hover:text-cyan-300">
+              <a
+                href="https://www.instagram.com/qudus.26?igsh=NDJiZmphMXpyanpj"
+                className="text-white text-base hover:text-cyan-300"
+              >
                 <FaInstagram />
               </a>
             </div>
@@ -143,7 +155,11 @@ const Contacts: React.FC = () => {
           </h2>
           <div className="map-container py-8">
             <h3 className="text-white text-lg font-medium">Our Location</h3>
-            <img src="lagos.jpg" className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000" alt="" />
+            <img
+              src="lagos.jpg"
+              className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000"
+              alt=""
+            />
           </div>
 
           <form className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -174,16 +190,25 @@ const Contacts: React.FC = () => {
         <span>Copyright &copy; 2025 AQ</span>
 
         <div className="flex justify-center items-center gap-8">
-          <a href="" className="text-white text-base">
+          <a href="github.com/StackAQ" className="text-white text-base">
             <FaGithub />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://x.com/ApexDev026?t=O0UTBLcyHHMAYFycOp8i9g&i9g&s=08"
+            className="text-white text-base"
+          >
             <FaTwitter />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://www.linkedin.com/in/abdullateef-abdulqudus-4a730432b?utm_source=share&utm_campaign=share_via"
+            className="text-white text-base"
+          >
             <FaLinkedin />
           </a>
-          <a href="" className="text-white text-base">
+          <a
+            href="https://www.instagram.com/qudus.26?igsh=NDJiZmphMXpyanpj"
+            className="text-white text-base"
+          >
             <FaInstagram />
           </a>
         </div>
