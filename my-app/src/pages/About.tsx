@@ -157,7 +157,7 @@ const About: React.FC = () => {
         <span>Copyright &copy; 2025 AQ</span>
 
         <div className="flex justify-center items-center gap-8">
-          <a href="github.com/StackAQ" className="text-white text-base">
+          <a href="https://github.com/StackAQ" className="text-white text-base">
             <FaGithub />
           </a>
           <a
