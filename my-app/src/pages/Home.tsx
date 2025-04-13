@@ -68,7 +68,7 @@ const Home: React.FC = () => {
               </h1>
             </div>
             <h1 className="anime text-cyan-300 text-2xl lg:text-4xl">
-              FULL-STACK DEVELOPER
+              FRONT-END DEVELOPER
             </h1>
           </div>
           <div className="w-full lg:w-1/3">
