@@ -85,7 +85,7 @@ const Home: React.FC = () => {
             </h1>
             <p className="text-lg lg:text-xl">
               I'm <span className="key-text">Abdulqudus</span>, a passionate{" "}
-              <span className="key-text">Full Stack Developer</span> with
+              <span className="key-text">Front-end Developer</span> with
               expertise in <span className="key-text">React</span>,{" "}
               <span className="key-text">TypeScript</span> and{" "}
               <span className="key-text">Python</span> for{" "}
