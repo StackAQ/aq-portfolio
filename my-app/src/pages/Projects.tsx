@@ -13,62 +13,100 @@ import {
 } from "react-icons/fa";
 import "../index.css";
 
-const data = [
+interface Date {
+  imgUrl: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const data: Date[] = [
   {
-    id: 1,
     imgUrl: "easybanking.jpg",
     title: "Easybanking Landing Page",
     description:
       "A modern and responsive banking website designed to captivate users with intuitive navigation and aesthetic appeal.",
+    link: "https://aq-easybanking-landing-page.vercel.app/",
   },
+
   {
-    id: 2,
-    imgUrl: "product-cart.jpg",
-    title: "Product Cart Platform",
+    imgUrl: "weather.jpg",
+    title: "My Weather App",
     description:
-      "A robust cart management system allowing users to add, remove, and purchase items effortlessly.",
+      "A sleek and responsive Weather App that provides real-time weather updates for any city. It displays temperature, weather conditions",
+    link: "https://weather-app-seven-lac-62.vercel.app/",
   },
+
   {
-    id: 3,
-    imgUrl: "klothink.png",
-    title: "Klothink E-Commerce Store",
+    imgUrl: "quote.jpg",
+    title: "Quote Generator App",
     description:
-      "An online fashion store featuring a sleek interface for seamless browsing and purchasing experiences.",
+      "This app displays random motivational, philosophical, or humorous quotes each time you press the generate button.",
+    link: "https://quote-generator-topaz-nine.vercel.app/",
   },
+
   {
-    id: 4,
-    imgUrl: "loopstudio.jpg",
-    title: "Loopstudio Landing Page",
-    description:
-      "A dynamic and interactive landing page showcasing a cutting-edge studio's services.",
-  },
-  {
-    id: 6,
-    imgUrl: "price-toggle.jpg",
-    title: "Price toggle",
-    description:
-      "A feature-rich pricing interface that enables users to switch between monthly and yearly plans effortlessly.",
-  },
-  {
-    id: 7,
     imgUrl: "mortgage.jpg",
     title: "Mortgage Repayment Calculator",
     description:
       "A practical tool that helps users calculate and plan their mortgage repayments efficiently.",
+    link: "https://mortage-calculator-53v1-e158xsy81-abdulqudus-projects-e654a863.vercel.app",
   },
+
   {
-    id: 8,
+    imgUrl: "multi-step.jpg",
+    title: "Multi Step Form",
+    description:
+      "A smooth and interactive form experiences designed to collect user input in a step by step format.",
+    link: "https://multi-step-form-omega-six.vercel.app/",
+  },
+
+  {
+    imgUrl: "klothink.png",
+    title: "Klothink E-Commerce Store",
+    description:
+      "An online fashion store featuring a sleek interface for seamless browsing and purchasing experiences.",
+    link: "",
+  },
+
+  {
+    imgUrl: "product-cart.jpg",
+    title: "Product Cart Platform",
+    description:
+      "A robust cart management system allowing users to add, remove, and purchase items effortlessly.",
+    link: "",
+  },
+
+  {
+    imgUrl: "loopstudio.jpg",
+    title: "Loopstudio Landing Page",
+    description:
+      "A dynamic and interactive landing page showcasing a cutting-edge studio's services.",
+    link: "",
+  },
+
+  {
+    imgUrl: "price-toggle.jpg",
+    title: "Price toggle",
+    description:
+      "A feature-rich pricing interface that enables users to switch between monthly and yearly plans effortlessly.",
+    link: "",
+  },
+
+  {
     imgUrl: "wnews.jpg",
     title: "W. News",
     description:
       "A news aggregation platform delivering current events with a clean, minimalistic design",
+    link: "",
   },
+
   {
-    id: 9,
     imgUrl: "rating.jpg",
     title: "Rating App",
     description:
       "An application that lets users rate products or services, providing valuable feedback for improvement.",
+    link: "",
   },
 ];
 
@@ -134,9 +172,12 @@ const Projects: React.FC = () => {
                 <span className="text-sm lg:text-base">
                   {project.description}
                 </span>
-                <button className="bg-transparent ring-2 ring-cyan-300 p-2 rounded-lg text-cyan-300">
+                <a
+                  href={project.link}
+                  className="cursor-pointer bg-transparent ring-2 ring-cyan-300 p-2 rounded-lg text-cyan-300"
+                >
                   view
-                </button>
+                </a>
               </div>
             </div>
           ))}
