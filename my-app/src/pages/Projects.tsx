@@ -82,7 +82,7 @@ const data: Date[] = [
     title: "Loopstudio Landing Page",
     description:
       "A dynamic and interactive landing page showcasing a cutting-edge studio's services.",
-    link: "",
+    link: "https://loopstudio-landing-page-fawn.vercel.app/",
   },
 
   {
