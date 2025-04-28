@@ -68,7 +68,7 @@ const Home: React.FC = () => {
               </h1>
             </div>
             <h1 className="anime text-cyan-300 text-2xl lg:text-4xl">
-              FRONT-END DEVELOPER
+              WEB DEVELOPER
             </h1>
           </div>
           <div className="w-full lg:w-1/3">
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
             </h1>
             <p className="text-lg lg:text-xl">
               I'm <span className="key-text">Abdulqudus</span>, a passionate{" "}
-              <span className="key-text">Front-End Developer</span> with
+              <span className="key-text">Web Developer</span> with
               expertise in <span className="key-text">React</span>,{" "}
               <span className="key-text">TypeScript</span> and{" "}
               <span className="key-text">Python</span> for{" "}
