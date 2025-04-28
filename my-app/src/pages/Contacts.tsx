@@ -105,7 +105,7 @@ const Contacts: React.FC = () => {
               Abdullateef Abdulqudus
             </span>
             <span className="text-xs md:text-sm lg:text-base text-center text-white font-medium">
-              Full-Stack Developer
+              Web Developer
             </span>
           </div>
           <div className="grid gap-6 py-6">
