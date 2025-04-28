@@ -64,7 +64,7 @@ const About: React.FC = () => {
           </h1>
           <p className="lg:text-xl font-normal">
             Hi, I'm <span className="text-cyan-300">Abdulqudus</span>, a{" "}
-            <span className="text-cyan-300">Front-End Developer</span> with a{" "}
+            <span className="text-cyan-300">Web Developer</span> with a{" "}
             <span className="text-cyan-300">B.Tech</span> in{" "}
             <span className="text-cyan-300">Computer Science</span> from LADOKE
             AKINTOLA UNIVERSITY OF TECHNOLOGY. I specialize in building modern,
