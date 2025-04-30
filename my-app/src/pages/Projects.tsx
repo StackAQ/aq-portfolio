@@ -66,7 +66,7 @@ const data: Date[] = [
     title: "Klothink E-Commerce Store",
     description:
       "An online fashion store featuring a sleek interface for seamless browsing and purchasing experiences.",
-    link: "",
+    link: "https://klothink-e-commerce-qudus.vercel.app/",
   },
 
   {
