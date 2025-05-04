@@ -7,7 +7,7 @@
   }
 
   .hero {
-    @apply relative z-30  w-full space-y-6 lg:space-y-28;
+    @apply relative z-50  w-full space-y-6 lg:space-y-28;
   }
 
   .navbar {
@@ -44,7 +44,7 @@
   }
 
   .hero-layout {
-    @apply flex justify-around items-center px-2;
+    @apply flex flex-col md:flex-row justify-around items-center px-2;
   }
 
   .text-layout {
@@ -94,7 +94,7 @@
   }
 
   .expertises {
-    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12;
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12;
   }
 
   .expertises-div {

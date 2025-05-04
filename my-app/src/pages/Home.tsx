@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   FaLinkedin,
   FaInstagram,
@@ -22,41 +23,46 @@ const Home: React.FC = () => {
 
   return (
     <div className="general">
+      <nav className="navbar">
+        <h2 className="logo">AQ.</h2>
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          <FaBars />
+        </button>
+        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+          <li>
+            <Link to="/" className="a-link">
+              <FaHome /> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="a-link">
+              <FaUser /> About
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" className="a-link">
+              <FaCode /> Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className="a-link">
+              <FaEnvelope /> Contacts
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <div className="hero">
-        <nav className="navbar">
-          <h2 className="logo">AQ.</h2>
-          <button
-            className="menu-toggle"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <FaBars />
-          </button>
-          <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
-            <li>
-              <Link to="/" className="a-link">
-                <FaHome /> Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="a-link">
-                <FaUser /> About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="a-link">
-                <FaCode /> Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/contacts" className="a-link">
-                <FaEnvelope /> Contacts
-              </Link>
-            </li>
-          </ul>
-        </nav>
         <div className="hero-layout">
-          <div className="text-2xl lg:text-4xl space-y-12">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-2xl lg:text-4xl space-y-12"
+          >
             <div className="space-y-3 text-white">
               <h1 className="">
                 Hi There <span className="">👋🏻</span>
@@ -70,16 +76,26 @@ const Home: React.FC = () => {
             <h1 className="anime text-cyan-300 text-2xl lg:text-4xl">
               WEB DEVELOPER
             </h1>
-          </div>
-          <div className="w-full lg:w-1/3">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="w-full lg:w-1/3"
+          >
             <img src="author.svg" alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       <div className="text-layout">
         <div className="the-flex">
-          <div className="intro-layout">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="intro-layout"
+          >
             <h1 className="text-4xl uppercase">
               Allow me to <span className="text-cyan-300">present</span> myself
             </h1>
@@ -95,21 +111,36 @@ const Home: React.FC = () => {
               while sharpening my skills. Let's collaborate and bring ideas to
               life!
             </p>
-          </div>
-          <div className="avatar">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="avatar"
+          >
             <img src="avatar.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       <div className="connect-layout">
-        <div className="space-y-2 text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="space-y-2 text-white"
+        >
           <h2 className="text-3xl lg:text-4xl">FIND ME ON</h2>
           <p className="text-lg">
             Feel free to <span className="text-cyan-300">connect</span> with me
           </p>
-        </div>
-        <div className="flex justify-center items-center gap-6">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="flex justify-center items-center gap-6"
+        >
           <a href="https://github.com/StackAQ" className="social-media">
             <FaGithub />
           </a>
@@ -131,7 +162,7 @@ const Home: React.FC = () => {
           >
             <FaInstagram />
           </a>
-        </div>
+        </motion.div>
       </div>
 
       <footer>

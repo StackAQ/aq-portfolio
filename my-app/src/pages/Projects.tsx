@@ -11,6 +11,8 @@ import {
   FaCode,
   FaEnvelope,
 } from "react-icons/fa";
+
+import { motion } from "framer-motion";
 import "../index.css";
 
 interface Date {
@@ -119,40 +121,39 @@ const Projects: React.FC = () => {
 
   return (
     <div className="general">
-      <div className="hero">
-        <nav className="navbar">
-          <h2 className="logo">AQ.</h2>
-          <button
-            className="menu-toggle"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <FaBars />
-          </button>
-          <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
-            <li>
-              <Link to="/" className="a-link">
-                <FaHome /> Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="a-link">
-                <FaUser /> About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="a-link">
-                <FaCode /> Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/contacts" className="a-link">
-                <FaEnvelope /> Contacts
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="navbar">
+        <h2 className="logo">AQ.</h2>
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          <FaBars />
+        </button>
+        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+          <li>
+            <Link to="/" className="a-link">
+              <FaHome /> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="a-link">
+              <FaUser /> About
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" className="a-link">
+              <FaCode /> Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className="a-link">
+              <FaEnvelope /> Contacts
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="hero"></div>
 
       <div className="projects">
         <div className="space-y-4 text-center text-white font-medium">
@@ -164,8 +165,14 @@ const Projects: React.FC = () => {
           </p>
         </div>
         <div className="projects-layout">
-          {data.map((project) => (
-            <div className="project-div">
+          {data.map((project, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+              key={index}
+              className="project-div"
+            >
               <img src={project.imgUrl} alt="" />
               <div className="grid gap-4 text-white font-medium text-center">
                 <span className="text-lg lg:text-xl">{project.title}</span>
@@ -179,7 +186,7 @@ const Projects: React.FC = () => {
                   view
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

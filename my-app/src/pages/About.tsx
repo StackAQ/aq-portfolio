@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   FaLinkedin,
   FaInstagram,
@@ -13,6 +14,26 @@ import {
 } from "react-icons/fa";
 import "../index.css";
 
+const skills = [
+  "/html.svg",
+  "/css.svg",
+  "/javascript.svg",
+  "/tailwind.svg",
+  "/typescript.svg",
+  "/rreact.svg",
+  "/python.svg",
+  "/node-js.svg",
+];
+
+const tools = [
+  "/vscode.svg",
+  "/figma.svg",
+  "/canva.svg",
+  "/excel.svg",
+  "/jupyter.svg",
+  "/vite.svg",
+];
+
 const About: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -22,43 +43,46 @@ const About: React.FC = () => {
 
   return (
     <div className="general">
-      <div className="hero">
-        <nav className="navbar">
-          <h2 className="logo">AQ.</h2>
-          <button
-            className="menu-toggle"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <FaBars />
-          </button>
-          <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
-            <li>
-              <Link to="/" className="a-link">
-                <FaHome /> Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="a-link">
-                <FaUser /> About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="a-link">
-                <FaCode /> Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/contacts" className="a-link">
-                <FaEnvelope /> Contacts
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="navbar">
+        <h2 className="logo">AQ.</h2>
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          <FaBars />
+        </button>
+        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+          <li>
+            <Link to="/" className="a-link">
+              <FaHome /> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="a-link">
+              <FaUser /> About
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" className="a-link">
+              <FaCode /> Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className="a-link">
+              <FaEnvelope /> Contacts
+            </Link>
+          </li>
+        </ul>
+      </nav>
 
       <div className="flex justify-between items-center flex-col lg:flex-row px-4 lg:px-16">
-        <div className="space-y-4 text-white font-medium">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="space-y-4 text-white font-medium"
+        >
           <h1 className="text-2xl lg:text-4xl uppercase">
             About <span className="text-cyan-300">Me</span>
           </h1>
@@ -89,8 +113,15 @@ const About: React.FC = () => {
           <p className="lg:text-xl font-normal">
             Let's connect and create impactful solutions together!
           </p>
-        </div>
-        <img src="hero.png" alt="" className="w-full lg:w-1/3 " />
+        </motion.div>
+        <motion.img
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          src="hero.png"
+          alt=""
+          className="w-full lg:w-1/3 "
+        />
       </div>
 
       <div className="skill">
@@ -98,34 +129,17 @@ const About: React.FC = () => {
           MY <span className="text-cyan-300">EXPERTISE</span>
         </h2>
         <div className="expertises">
-          <div className="expertises-div">
-            <img src="html.svg" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="css.svg" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="javascript.svg" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="tailwind.svg" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="typescript.svg" alt="" />
-          </div>
-          {/* the six */}
-
-          <div className="col-span-1 hidden lg:grid"></div>
-          <div className="expertises-div">
-            <img src="rreact.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="python.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="node-js.svg" className="w-full" alt="" />
-          </div>
-          <div className="col-span-1 hidden lg:grid"></div>
+          {skills.map((e, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+              key={index}
+              className="expertises-div"
+            >
+              <img src={e} alt="" />
+            </motion.div>
+          ))}
         </div>
       </div>
 
@@ -133,22 +147,18 @@ const About: React.FC = () => {
         <h2 className="text-2xl lg:text-4xl text-white text-center">
           MY <span className="text-cyan-300">TOOLS</span>
         </h2>
-        <div className="expertises">
-          <div className="expertises-div">
-            <img src="vscode.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="canva.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="excel.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="jupyter.svg" className="w-full" alt="" />
-          </div>
-          <div className="expertises-div">
-            <img src="vite.svg" className="w-full" alt="" />
-          </div>
+        <div className="expertises lg:grid-cols-3">
+          {tools.map((e, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.1 }}
+              key={index}
+              className="expertises-div"
+            >
+              <img src={e} alt="" />
+            </motion.div>
+          ))}
         </div>
       </div>
 

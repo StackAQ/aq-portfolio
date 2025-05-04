@@ -13,6 +13,7 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import "../index.css";
 
 const Contacts: React.FC = () => {
@@ -60,43 +61,47 @@ const Contacts: React.FC = () => {
 
   return (
     <div className="general">
-      <div className="hero">
-        <nav className="navbar">
-          <h2 className="logo">AQ.</h2>
-          <button
-            className="menu-toggle"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <FaBars />
-          </button>
-          <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
-            <li>
-              <Link to="/" className="a-link">
-                <FaHome /> Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="a-link">
-                <FaUser /> About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="a-link">
-                <FaCode /> Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/contacts" className="a-link">
-                <FaEnvelope /> Contacts
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="navbar">
+        <h2 className="logo">AQ.</h2>
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          <FaBars />
+        </button>
+        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+          <li>
+            <Link to="/" className="a-link">
+              <FaHome /> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="a-link">
+              <FaUser /> About
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" className="a-link">
+              <FaCode /> Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className="a-link">
+              <FaEnvelope /> Contacts
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="hero"></div>
 
       <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
-        <div className="contact-left">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="contact-left"
+        >
           <div className="grid gap-6 py-8 border-b border-b-cyan-300">
             <div className="avatar w-32 h-32">
               <img src="avatar.png" alt="" className="" />
@@ -148,19 +153,24 @@ const Contacts: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="space-y-8 font-medium">
           <h2 className="text-white text-xl lg:text-3xl">
             <span className="text-cyan-300">Contact</span> Form
           </h2>
-          <div className="map-container py-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="map-container py-8"
+          >
             <h3 className="text-white text-lg font-medium">Our Location</h3>
             <img
               src="lagos.jpg"
               className="w-full cursor-pointer hover:scale-95 hover:ease-in-out duration-1000"
               alt=""
             />
-          </div>
+          </motion.div>
 
           <form className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {inputtype.map((input) => (
