@@ -121,6 +121,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="general">
+      <div className="hero"></div>
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -153,7 +154,6 @@ const Projects: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="hero"></div>
 
       <div className="projects">
         <div className="space-y-4 text-center text-white font-medium">

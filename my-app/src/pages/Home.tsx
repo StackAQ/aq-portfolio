@@ -23,6 +23,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="general">
+      <div className="hero">
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -55,7 +56,6 @@ const Home: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="hero">
         <div className="hero-layout">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

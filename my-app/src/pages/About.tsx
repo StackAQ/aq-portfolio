@@ -43,6 +43,8 @@ const About: React.FC = () => {
 
   return (
     <div className="general">
+
+      <div className="flex justify-between items-center flex-col lg:flex-row px-4 lg:px-16">
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -75,8 +77,6 @@ const About: React.FC = () => {
           </li>
         </ul>
       </nav>
-
-      <div className="flex justify-between items-center flex-col lg:flex-row px-4 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

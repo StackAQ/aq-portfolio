@@ -61,6 +61,8 @@ const Contacts: React.FC = () => {
 
   return (
     <div className="general">
+
+      <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -93,9 +95,6 @@ const Contacts: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="hero"></div>
-
-      <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
