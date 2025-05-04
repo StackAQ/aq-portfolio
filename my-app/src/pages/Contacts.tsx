@@ -12,6 +12,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
+  FaTimes,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "../index.css";
@@ -61,8 +62,6 @@ const Contacts: React.FC = () => {
 
   return (
     <div className="general">
-
-      <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -72,7 +71,7 @@ const Contacts: React.FC = () => {
         >
           <FaBars />
         </button>
-        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+        <ul className="hidden lg:flex menu">
           <li>
             <Link to="/" className="a-link">
               <FaHome /> Home
@@ -94,7 +93,38 @@ const Contacts: React.FC = () => {
             </Link>
           </li>
         </ul>
+
+        {isOpen && (
+          <div className="menu-open">
+            <ul className="grid gap-4 w-full">
+              <li>
+                <Link to="/" className="a-link">
+                  <FaHome /> Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="a-link">
+                  <FaUser /> About
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="a-link">
+                  <FaCode /> Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/contacts" className="a-link">
+                  <FaEnvelope /> Contacts
+                </Link>
+              </li>
+            </ul>
+            <button className="text-xl text-white" onClick={toggleMenu}>
+              <FaTimes />
+            </button>
+          </div>
+        )}
       </nav>
+      <div className="md:px-4 lg:px-16 flex gap-16 items-start flex-col lg:flex-row">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

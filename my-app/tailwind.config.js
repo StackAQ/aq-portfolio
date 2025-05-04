@@ -6,7 +6,9 @@ module.exports = {
       keyframes: {
         typewriter: {
           "0%": { width: "0%" },
-          "100%": { width: "100%" },
+          "50%": { width: "100%" },
+          60: { width: "100%" },
+          100: { width: "0" },
         },
         brink: {
           "0%, 100%": { "border-color": "transparent" },
@@ -14,7 +16,7 @@ module.exports = {
         },
       },
       animation: {
-        typewriter: "typewriter 4s steps(30, end) forwards",
+        typewriter: "typewriter 5s steps(40) infinite",
         brink: "blink 0.5s step-end infinite",
       },
     },

@@ -11,6 +11,7 @@ import {
   FaUser,
   FaCode,
   FaEnvelope,
+  FaTimes,
 } from "react-icons/fa";
 import "../index.css";
 
@@ -23,7 +24,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="general">
-      <div className="hero">
       <nav className="navbar">
         <h2 className="logo">AQ.</h2>
         <button
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         >
           <FaBars />
         </button>
-        <ul className={`menu ${isOpen ? "open" : "hidden lg:flex"}`}>
+        <ul className="hidden lg:flex menu">
           <li>
             <Link to="/" className="a-link">
               <FaHome /> Home
@@ -55,13 +55,45 @@ const Home: React.FC = () => {
             </Link>
           </li>
         </ul>
+
+        {isOpen && (
+          <div className="menu-open">
+            <ul className="grid gap-4 w-full">
+              <li>
+                <Link to="/" className="a-link">
+                  <FaHome /> Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="a-link">
+                  <FaUser /> About
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="a-link">
+                  <FaCode /> Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/contacts" className="a-link">
+                  <FaEnvelope /> Contacts
+                </Link>
+              </li>
+            </ul>
+            <button className="text-xl text-white" onClick={toggleMenu}>
+              <FaTimes />
+            </button>
+          </div>
+        )}
       </nav>
+
+      <div className="hero">
         <div className="hero-layout">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-2xl lg:text-4xl space-y-12"
+            className="text-2xl lg:text-4xl space-y-8"
           >
             <div className="space-y-3 text-white">
               <h1 className="">
@@ -81,9 +113,9 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="w-full lg:w-1/3"
+            className="flex justify-center items-center lg:w-1/3"
           >
-            <img src="author.svg" alt="" />
+            <img className="w-[80%]" src="author.svg" alt="" />
           </motion.div>
         </div>
       </div>
@@ -101,8 +133,8 @@ const Home: React.FC = () => {
             </h1>
             <p className="text-lg lg:text-xl">
               I'm <span className="key-text">Abdulqudus</span>, a passionate{" "}
-              <span className="key-text">Web Developer</span> with
-              expertise in <span className="key-text">React</span>,{" "}
+              <span className="key-text">Web Developer</span> with expertise in{" "}
+              <span className="key-text">React</span>,{" "}
               <span className="key-text">TypeScript</span> and{" "}
               <span className="key-text">Python</span> for{" "}
               <span className="key-text">Data Science</span>, while continuously

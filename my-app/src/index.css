@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
   .general {
-    @apply relative w-full bg-[url('../src/sky-stars.svg')] bg-no-repeat bg-cover space-y-16 lg:space-y-32;
+    @apply relative w-full bg-[url('../src/sky-stars.svg')] bg-no-repeat bg-cover space-y-16 lg:space-y-32 px-2;
   }
 
   .hero {
@@ -22,8 +22,8 @@
     @apply text-white font-medium items-center gap-8 transition-all duration-300 ease-in-out;
   }
 
-  .menu.open {
-    @apply flex flex-col gap-4 absolute top-full left-0 w-full bg-[rgba(0,0,0,0.8)] p-4 lg:static lg:flex-row lg:w-auto lg:p-0;
+  .menu-open {
+    @apply flex items-start justify-between top-0 left-0 w-full absolute transition-all duration-300 ease-in-out z-50 bg-[rgba(0,0,0,0.5)] p-4 text-white font-semibold h-1/2;
   }
 
   .a-link {
@@ -44,7 +44,7 @@
   }
 
   .hero-layout {
-    @apply flex flex-col-reverse md:flex-row justify-around items-center gap-4 px-2;
+    @apply flex flex-col-reverse lg:flex-row justify-start lg:justify-around lg:items-center gap-8 px-2;
   }
 
   .text-layout {
