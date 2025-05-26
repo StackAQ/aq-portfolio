@@ -49,6 +49,20 @@ const data: Date[] = [
   },
 
   {
+    imgUrl: "dua.png",
+    title: "Husnul Muslim Dua App",
+    description: "A beautifully designed app that provides a collection of Islamic supplications (duas) for various occasions.",
+    link: "https://husnul-muslim-abdulqudus-app.vercel.app/",
+  },
+
+  {
+    imgUrl: "med.png",
+    title: "Medical Duties Scheduler",
+    description: "A comprehensive scheduling tool designed for medical professionals to manage their duties and appointments effectively.",
+    link: "https://qudus-lautech-med-scheduler.vercel.app/"
+  },
+
+  {
     imgUrl: "mortgage.jpg",
     title: "Mortgage Repayment Calculator",
     description:
