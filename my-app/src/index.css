@@ -11,7 +11,7 @@
   }
 
   .navbar {
-    @apply py-2 lg:py-4 flex items-center justify-between bg-[rgba(0,0,0,0.2)] transition-all px-4 lg:px-16;
+    @apply py-2 lg:py-4 flex items-center justify-between bg-[rgba(0,0,0,0.6)] transition-all px-4 lg:px-16;
   }
 
   .logo {
